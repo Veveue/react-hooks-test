@@ -9,7 +9,6 @@ function Ticker(props) {
     const tick = () => {
         reset();
         interval = window.setInterval(() => {
-            console.log("111111111111111", ticker);
             if (ticker < props.times) {
                 setTickers(ticker + 1);
             }
