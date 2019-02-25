@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 function Counter() {
   const [count, setCount] = useState(0);
   const [delay, setDelay] = useState(null);

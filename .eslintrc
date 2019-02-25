@@ -1,3 +1,28 @@
 {
-  "extends": "eslint-config-umi"
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "legacyDecorators": true
+        }
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "extends": [
+        "eslint-config-umi",
+        "prettier",
+        "prettier/react"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": false,
+                "trailingComma": "es5",
+                "jsxBracketSameLine": true,
+                "semi": true
+            }
+        ]
+    }
 }
